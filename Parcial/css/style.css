@@ -1,149 +1,148 @@
-/*Incluir estilos aquí */
-/* Campos válidos: borde y sombra rojo*/
+/* Incluir estilos aquí */
+/* Campos válidos: borde y sombra rojo */
 .is-valid {
-    border-color: #ff0000 !important;
-    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25) !important;
+    border-color: #ff0000 !important; /* Color del borde para campos válidos */
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25) !important; /* Sombra para campos válidos */
 }
 
-/* style.css */
-
+/* Estilos generales para el cuerpo */
 body {
-  background-color: #f0f2f5;
-  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5; /* Color de fondo del cuerpo */
+  font-family: 'Roboto', sans-serif; /* Fuente del cuerpo */
 }
 
 /* LOGO */
 .logo-utn {
-  height: 40px;
-  width: auto;
+  height: 40px; /* Altura del logo */
+  width: auto; /* Ancho automático para mantener la proporción */
 }
 
 /* NAVBAR */
 .navbar-brand span {
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Tamaño de fuente para el nombre de la marca en la navbar */
 }
 
 .navbar .nav-link {
-  font-weight: 500;
-  transition: color 0.2s;
+  font-weight: 500; /* Peso de fuente para los enlaces de la navbar */
+  transition: color 0.2s; /* Transición suave para el color al pasar el mouse */
 }
 
 .navbar .nav-link:hover {
-  color: #ffc107;
+  color: #ffc107; /* Color del enlace al pasar el mouse */
 }
 
 /* TITULOS */
 h2 {
-  font-weight: 700;
-  color: #0d6efd;
+  font-weight: 700; /* Peso de fuente para los títulos h2 */
+  color: #0d6efd; /* Color del texto para los títulos h2 */
 }
 
 /* FORMULARIO */
 form {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  background-color: white; /* Color de fondo del formulario */
+  border-radius: 12px; /* Bordes redondeados del formulario */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
 }
 
 form .form-label {
-  font-weight: 500;
+  font-weight: 500; /* Peso de fuente para las etiquetas del formulario */
 }
 
 form .form-control:focus {
-  border-color: #0d6efd;
-  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  border-color: #0d6efd; /* Color del borde al enfocar el campo */
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25); /* Sombra al enfocar el campo */
 }
 
 form .form-control-color {
-  height: 40px;
+  height: 40px; /* Altura del selector de color */
 }
 
 /* BOTONES */
 .btn i {
-  margin-right: 4px;
+  margin-right: 4px; /* Espacio a la derecha del icono en los botones */
 }
 
 .btn-success, .btn-warning, .btn-secondary {
-  font-weight: 500;
+  font-weight: 500; /* Peso de fuente para los botones */
 }
 
 .btn-success:hover {
-  background-color: #198754cc;
+  background-color: #198754cc; /* Color de fondo al pasar el mouse en el botón de éxito */
 }
 
 .btn-warning:hover {
-  background-color: #ffc107cc;
+  background-color: #ffc107cc; /* Color de fondo al pasar el mouse en el botón de advertencia */
 }
 
 .btn-secondary:hover {
-  background-color: #6c757dcc;
+  background-color: #6c757dcc; /* Color de fondo al pasar el mouse en el botón secundario */
 }
 
 /* TABS */
 .nav-tabs .nav-link {
-  font-weight: 500;
-  border-radius: .5rem .5rem 0 0;
-  background-color: #e9ecef;
-  margin-right: 5px;
+  font-weight: 500; /* Peso de fuente para los enlaces de las pestañas */
+  border-radius: .5rem .5rem 0 0; /* Bordes redondeados para las pestañas */
+  background-color: #e9ecef; /* Color de fondo para las pestañas */
+  margin-right: 5px; /* Espacio a la derecha de las pestañas */
 }
 
 .nav-tabs .nav-link.active {
-  background-color: #ffffff;
-  border-color: #dee2e6 #dee2e6 #ffffff;
-  font-weight: 700;
-  color: #0d6efd;
+  background-color: #ffffff; /* Color de fondo para la pestaña activa */
+  border-color: #dee2e6 #dee2e6 #ffffff; /* Color del borde para la pestaña activa */
+  font-weight: 700; /* Peso de fuente para la pestaña activa */
+  color: #0d6efd; /* Color del texto para la pestaña activa */
 }
 
 /* FILTROS Y LISTADO */
 #inputFiltroMarca {
-  border-radius: 0.5rem;
+  border-radius: 0.5rem; /* Bordes redondeados para el campo de filtro */
 }
 
 #divListado {
-  margin-top: 10px;
+  margin-top: 10px; /* Margen superior para el listado */
 }
 
 /* ESTADISTICAS */
 #resultadoPromedio {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #495057;
+  font-size: 1.2rem; /* Tamaño de fuente para el resultado del promedio */
+  font-weight: bold; /* Peso de fuente para el resultado del promedio */
+  color: #495057; /* Color del texto para el resultado del promedio */
 }
 
 /* Estilos base claro (por defecto) */
 body {
-  background-color: #f8f9fa;
-  color: #212529;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #f8f9fa; /* Color de fondo claro por defecto */
+  color: #212529; /* Color del texto por defecto */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para cambios de color */
 }
 
 /* Ejemplo para que los contenedores también cambien */
 .bg-white {
-  background-color: #fff !important;
-  transition: background-color 0.3s ease;
+  background-color: #fff !important; /* Color de fondo blanco para contenedores */
+  transition: background-color 0.3s ease; /* Transición suave para cambios de color */
 }
 
 /* Modo oscuro */
 body.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #121212; /* Color de fondo en modo oscuro */
+  color: #e0e0e0; /* Color del texto en modo oscuro */
 }
 
 body.dark-mode .bg-white {
-  background-color: #1e1e1e !important;
+  background-color: #1e1e1e !important; /* Color de fondo para contenedores en modo oscuro */
 }
 
 /* Navbar en modo oscuro */
 body.dark-mode .navbar {
-  background-color: #222 !important;
+  background-color: #222 !important; /* Color de fondo de la navbar en modo oscuro */
 }
 
 /* Botón toggle modo oscuro (puedes personalizar) */
 #theme-toggle {
-  transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave para el botón toggle */
 }
 
 body.dark-mode #theme-toggle {
-  color: #ffc107; /* amarillo para que resalte */
-  border-color: #ffc107 !important;
+  color: #ffc107; /* Color del texto del botón toggle en modo oscuro */
+  border-color: #ffc107 !important; /* Color del borde del botón toggle en modo oscuro */
 }
