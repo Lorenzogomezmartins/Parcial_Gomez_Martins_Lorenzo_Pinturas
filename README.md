@@ -2,10 +2,6 @@
 
 ---
 
-## 📁 Estructura del Proyecto
-
-
----
 
 ## 🚀 Funcionalidades Clave
 
@@ -58,27 +54,19 @@
 
 
 
+## 🗂️ Estructura del Proyecto
+
+- **/css**  
+  └── `style.css` 🎨 — Estilos personalizados + Bootstrap 5
+
+- **/img**  
+  └── `utnLogo.png` 🖼️ — Logo UTN para la barra de navegación
+
+- **/js**  
+  └── `manejadora.js` ⚙️ — JavaScript: fetch, validaciones y UI dinámica
+
+- `pintureria.html` 🖥️ — Página principal con formulario y listado
+
+- `README.md` 📄 — Documentación completa del proyecto
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/css
-└── style.css 🎨 Estilos personalizados + Bootstrap 5
-/img
-└── utnLogo.png 🖼️ Logo UTN para navbar
-/js
-└── manejadora.js ⚙️ JS: fetch, validaciones, UI dinámica
-pintureria.html 🖥️ Página principal: formulario + listado
-README.md 📄 Documentación completa
