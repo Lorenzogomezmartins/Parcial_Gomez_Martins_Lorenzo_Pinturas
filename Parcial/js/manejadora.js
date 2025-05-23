@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("btnAgregar").addEventListener("click", agregarPintura);
     document.getElementById("btnModificar").addEventListener("click", modificarPintura);
 
-    document.getElementById("inputFiltroMarca").addEventListener("input", filtrarPinturasPorMarca);
     document.getElementById("btnFiltrarMarca").addEventListener("click", filtrarPinturasPorMarca);
 
     document.getElementById("btnPromedio").addEventListener("click", mostrarPrecioPromedio);
@@ -366,21 +365,29 @@ function filtrarPinturasPorMarca() {
     const filtro = inputFiltro.value.trim().toLowerCase();
 
     if (filtro === "") {
-        mostrarMensaje("Ingresá una marca para filtrar.", "warning");
+        // Si no se ingresó nada, mostrar todas las pinturas
+        renderizarTabla(pinturasGlobal);
+        mostrarMensaje("Mostrando todas las pinturas.", "info");
         return;
     }
 
-    const filtradas = pinturasGlobal.filter(p => p.marca.toLowerCase() === filtro);
+    const filtradas = pinturasGlobal.filter(p => 
+        typeof p.marca === "string" && 
+        p.marca.trim().toLowerCase() === filtro
+    );
+
+    console.log("Filtro aplicado:", filtro);
+    console.log("Coincidencias encontradas:", filtradas.length);
 
     if (filtradas.length === 0) {
         mostrarMensaje("No se encontraron pinturas con esa marca.", "info");
-        // Opcional: mostrar lista vacía o toda la lista
         renderizarTabla([]); // tabla vacía si no hay coincidencias
         return;
     }
 
     renderizarTabla(filtradas);
 }
+
 
 
 
