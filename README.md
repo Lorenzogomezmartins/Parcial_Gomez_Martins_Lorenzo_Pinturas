@@ -1,4 +1,4 @@
-# 🎨 **Pinturería UTN** | Proyecto Web
+                                                                # 🎨 **Pinturería UTN** | Proyecto Web
 
 ---
 
@@ -42,14 +42,14 @@
 ## 🎓 ¿Qué aprendí?
 
 - 🤝 Integración real con API REST usando fetch/JSON.  
-- ✔️ Validar formularios con UX amigable y Bootstrap.  
+- ✔️ Validar formularios y trabajar sobre ellos.
 - 🔄 Actualizar la UI dinámicamente sin recargas.  
 - 📐 Diseño responsive y accesible con Bootstrap.  
 - 💾 Exportar datos y crear modos visuales claros y oscuros.  
 
 ---
 
-💡 ¡Un proyecto que me ayudó a subir de nivel en desarrollo web! Gracias UTN por el desafío 🙌
+                                    💡 ¡Un proyecto que me ayudó a subir de nivel en desarrollo web! Gracias UTN por el desafío 🙌
 
 
 
