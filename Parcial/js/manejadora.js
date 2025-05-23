@@ -1,4 +1,8 @@
-//################################## Parte 1 – Listado inicial y alta básica ##################################
+// ────────────────────────────────────────────────────────────────
+//                       PARTE 1
+//           ——— listado inicial y alta basica ———
+// ────────────────────────────────────────────────────────────────
+
 //1. Al cargar pintureria.html, obtener el listado de pinturas con GET /pinturas.
 
 // URL base de la API de pinturas
@@ -128,8 +132,11 @@ async function agregarPintura() {
 }
 
 
+// ────────────────────────────────────────────────────────────────
+//                       PARTE 2
+//       ——— Acciones de selección, modificación y eliminación  ———
+// ────────────────────────────────────────────────────────────────
 
-//################################## Parte 2 – Acciones de selección, modificación y eliminación ##################################
 //1. Agregar columna ACCIONES con botones:
 // Función para seleccionar una pintura y cargar sus datos en el formulario
 function seleccionarPintura(id) {
@@ -264,7 +271,11 @@ async function eliminarPintura(id) {
 // Asocia la función eliminarPintura al objeto global window
 window.eliminarPintura = eliminarPintura;
 
-//################################## Parte 3 – Validaciones con Bootstrap y JS ##################################
+// ────────────────────────────────────────────────────────────────
+//                       PARTE 3
+//       ——— Validaciones con Bootstrap y JS  ———
+// ────────────────────────────────────────────────────────────────
+
 //1. Validar:
 // Función para validar los campos del formulario
 function validarFormulario() {
@@ -369,8 +380,11 @@ function limpiarValidaciones() {
         }
     });
 }
+// ────────────────────────────────────────────────────────────────
+//                       PARTE 4
+//           ——— UX mejorado y filtros  ———
+// ────────────────────────────────────────────────────────────────
 
-//################################## Parte 4 – UX mejorado y filtros ##################################
 //3. Agregar botón Filtros:
 // Función para filtrar pinturas por marca
 function filtrarPinturasPorMarca() {
@@ -434,8 +448,11 @@ function mostrarPrecioPromedio() {
 
     alert(`El precio promedio de las pinturas es: $${promedio.toFixed(2)}`); // Muestra el promedio
 }
+// ────────────────────────────────────────────────────────────────
+//                       PARTE 6
+//         ——— Funcionalidades estadísticas y exportación  ———
+// ────────────────────────────────────────────────────────────────
 
-//################################## Parte 6 – Funcionalidades estadísticas y exportación ##################################
 //1. Agregar botón: Mostrar estadísticas (nuevo div o modal que muestre):
 // Función para mostrar estadísticas de las pinturas
 function mostrarEstadisticas() {
