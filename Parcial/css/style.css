@@ -1,0 +1,149 @@
+/*Incluir estilos aquí */
+/* Campos válidos: borde y sombra rojo*/
+.is-valid {
+    border-color: #ff0000 !important;
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25) !important;
+}
+
+/* style.css */
+
+body {
+  background-color: #f0f2f5;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* LOGO */
+.logo-utn {
+  height: 40px;
+  width: auto;
+}
+
+/* NAVBAR */
+.navbar-brand span {
+  font-size: 1.2rem;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar .nav-link:hover {
+  color: #ffc107;
+}
+
+/* TITULOS */
+h2 {
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+/* FORMULARIO */
+form {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+form .form-label {
+  font-weight: 500;
+}
+
+form .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+form .form-control-color {
+  height: 40px;
+}
+
+/* BOTONES */
+.btn i {
+  margin-right: 4px;
+}
+
+.btn-success, .btn-warning, .btn-secondary {
+  font-weight: 500;
+}
+
+.btn-success:hover {
+  background-color: #198754cc;
+}
+
+.btn-warning:hover {
+  background-color: #ffc107cc;
+}
+
+.btn-secondary:hover {
+  background-color: #6c757dcc;
+}
+
+/* TABS */
+.nav-tabs .nav-link {
+  font-weight: 500;
+  border-radius: .5rem .5rem 0 0;
+  background-color: #e9ecef;
+  margin-right: 5px;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #ffffff;
+  border-color: #dee2e6 #dee2e6 #ffffff;
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+/* FILTROS Y LISTADO */
+#inputFiltroMarca {
+  border-radius: 0.5rem;
+}
+
+#divListado {
+  margin-top: 10px;
+}
+
+/* ESTADISTICAS */
+#resultadoPromedio {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #495057;
+}
+
+/* Estilos base claro (por defecto) */
+body {
+  background-color: #f8f9fa;
+  color: #212529;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ejemplo para que los contenedores también cambien */
+.bg-white {
+  background-color: #fff !important;
+  transition: background-color 0.3s ease;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .bg-white {
+  background-color: #1e1e1e !important;
+}
+
+/* Navbar en modo oscuro */
+body.dark-mode .navbar {
+  background-color: #222 !important;
+}
+
+/* Botón toggle modo oscuro (puedes personalizar) */
+#theme-toggle {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+body.dark-mode #theme-toggle {
+  color: #ffc107; /* amarillo para que resalte */
+  border-color: #ffc107 !important;
+}

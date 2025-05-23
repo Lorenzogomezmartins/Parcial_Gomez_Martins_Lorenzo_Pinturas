@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>App Pinturas UTN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <!-- HEADER: Navbar fijo con logo UTN y navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow" role="navigation" aria-label="Barra de navegación principal">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./img/utnLogo.png" alt="UTN Logo" class="logo-utn me-2" style="height: 40px;" />
+        <span class="fw-bold">Pinturas UTN</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto" role="menubar" aria-label="Menú principal">
+          <li class="nav-item" role="none"><a class="nav-link active" href="#formTab" role="menuitem" tabindex="0">Alta</a></li>
+          <li class="nav-item" role="none"><a class="nav-link" href="#listadoTab" role="menuitem" tabindex="-1">Listado</a></li>
+          <li class="nav-item" role="none"><a class="nav-link" href="#estadisticasTab" role="menuitem" tabindex="-1">Estadísticas</a></li>
+        </ul>
+      </div>
+
+      <!-- Botón toggle modo oscuro/claro -->
+      <button id="theme-toggle" class="btn btn-outline-light ms-3" aria-pressed="false" aria-label="Alternar modo oscuro o claro">
+        <i class="bi bi-moon-fill"></i> Modo Oscuro
+      </button>
+    </div>
+  </nav>
+
+  <!-- Contenedor Principal -->
+  <div class="container-fluid" style="padding-top: 100px; font-family: 'Roboto', sans-serif;">
+    <h2 class="text-center mb-4">Gómez Martins Lorenzo — Pinturas para todos</h2>
+
+    <!-- Sistema de Tabs -->
+    <ul class="nav nav-tabs mb-3" id="tabMenu" role="tablist" aria-label="Pestañas de navegación">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="form-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#formTab"
+          type="button"
+          role="tab"
+          aria-selected="true"
+          aria-controls="formTab"
+          tabindex="0"
+        >
+          Formulario
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="listado-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#listadoTab"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="listadoTab"
+          tabindex="-1"
+        >
+          Listado
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="estadisticas-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#estadisticasTab"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="estadisticasTab"
+          tabindex="-1"
+        >
+          Estadísticas
+        </button>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+      <!-- FORMULARIO -->
+      <div class="tab-pane fade show active" id="formTab" role="tabpanel" aria-labelledby="form-tab" tabindex="0">
+        <form
+          id="frmFormulario"
+          class="row g-3 bg-white p-4 rounded shadow-sm needs-validation"
+          novalidate
+          role="form"
+          aria-describedby="formDesc"
+        >
+          <p id="formDesc" class="visually-hidden">Formulario para agregar o modificar pinturas. Los campos marcados son obligatorios.</p>
+
+          <div class="col-md-2">
+            <label for="inputID" class="form-label">ID</label>
+            <input
+              type="text"
+              readonly
+              class="form-control"
+              id="inputID"
+              aria-readonly="true"
+              aria-label="Identificador único, campo de solo lectura"
+            />
+          </div>
+
+          <div class="col-md-5">
+            <label for="inputMarca" class="form-label">Marca <span aria-hidden="true" class="text-danger">*</span></label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputMarca"
+              required
+              aria-required="true"
+              aria-describedby="marcaError"
+            />
+            <div id="marcaError" class="invalid-feedback" role="alert" aria-live="polite"></div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="inputPrecio" class="form-label">Precio (USD) <span aria-hidden="true" class="text-danger">*</span></label>
+            <input
+              type="number"
+              class="form-control"
+              id="inputPrecio"
+              min="50"
+              max="500"
+              step="50"
+              required
+              aria-required="true"
+              aria-describedby="precioError"
+            />
+            <div id="precioError" class="invalid-feedback" role="alert" aria-live="polite"></div>
+          </div>
+
+          <div class="col-md-1">
+            <label for="inputColor" class="form-label">Color <span aria-hidden="true" class="text-danger">*</span></label>
+            <input
+              type="color"
+              class="form-control form-control-color p-0"
+              id="inputColor"
+              value="#ff0000"
+              required
+              aria-required="true"
+              aria-describedby="colorError"
+            />
+            <div id="colorError" class="invalid-feedback" role="alert" aria-live="polite"></div>
+          </div>
+
+          <div class="col-md-1">
+            <label for="inputCantidad" class="form-label">Cantidad <span aria-hidden="true" class="text-danger">*</span></label>
+            <input
+              type="number"
+              class="form-control"
+              id="inputCantidad"
+              min="1"
+              max="400"
+              required
+              aria-required="true"
+              aria-describedby="cantidadError"
+            />
+            <div id="cantidadError" class="invalid-feedback" role="alert" aria-live="polite"></div>
+          </div>
+
+          <div class="col-12 d-flex gap-2 mt-3">
+            <button
+              type="button"
+              id="btnAgregar"
+              class="btn btn-success"
+              aria-label="Agregar pintura"
+            >
+              <i class="bi bi-plus-circle"></i> Agregar
+            </button>
+            <button
+              type="button"
+              id="btnModificar"
+              class="btn btn-warning"
+              disabled
+              aria-label="Modificar pintura"
+            >
+              <i class="bi bi-pencil-square"></i> Modificar
+            </button>
+            <button
+              type="reset"
+              class="btn btn-secondary"
+              aria-label="Limpiar formulario"
+            >
+              <i class="bi bi-x-circle"></i> Limpiar
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- LISTADO -->
+      <div class="tab-pane fade" id="listadoTab" role="tabpanel" aria-labelledby="listado-tab" tabindex="0">
+        <div class="row align-items-center my-4">
+          <div class="col-md-6">
+            <label for="inputFiltroMarca" class="form-label visually-hidden">Filtrar por marca</label>
+            <input
+              type="text"
+              id="inputFiltroMarca"
+              class="form-control"
+              placeholder="Filtrar por marca"
+              aria-label="Filtrar por marca"
+            />
+          </div>
+          <div class="col-md-6 text-md-end mt-3 mt-md-0">
+            <button id="btnFiltrarMarca" class="btn btn-primary me-2" aria-label="Filtrar pinturas por marca">
+              <i class="bi bi-funnel"></i> Filtrar
+            </button>
+            <button id="btnPromedio" class="btn btn-secondary" aria-label="Calcular precio promedio">
+              <i class="bi bi-calculator"></i> Promedio
+            </button>
+          </div>
+        </div>
+        <div id="spinner" class="text-center my-3" style="display: none;">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+          </div>
+        </div>
+        <div id="divListado" class="table-responsive bg-white rounded shadow-sm p-3" aria-live="polite" aria-relevant="all"></div>
+      </div>
+
+      <!-- ESTADÍSTICAS -->
+      <div class="tab-pane fade" id="estadisticasTab" role="tabpanel" aria-labelledby="estadisticas-tab" tabindex="0">
+        <div class="bg-white p-4 rounded shadow-sm">
+          <h4 class="mb-3"><i class="bi bi-bar-chart"></i> Precio promedio</h4>
+          <p id="resultadoPromedio" class="lead" aria-live="polite" aria-atomic="true">
+            Hacé clic en el botón de arriba para calcular el promedio.
+          </p>
+          <button id="btnMostrarEstadisticas" class="btn btn-info mb-3" aria-label="Mostrar estadísticas">
+            Mostrar estadísticas
+          </button>
+          <!-- Botón para exportar CSV -->
+          <button id="btnExportCSV" class="btn btn-success my-3" aria-label="Exportar listado a archivo CSV">
+            <i class="bi bi-download"></i> Exportar a CSV
+          </button>
+          <div id="divEstadisticas" class="alert alert-secondary" style="display: none;" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS Propio -->
+  <script src="./js/manejadora.js"></script>
+</body>
+</html>
