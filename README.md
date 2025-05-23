@@ -1,7 +1,8 @@
-                                                                # 🎨 **Pinturería UTN** | Proyecto Web
+<p align="center">
+  <h1>🎨 <b>Pinturería UTN</b> | Proyecto Web</h1>
+</p>
 
 ---
-
 
 ## 🚀 Funcionalidades Clave
 
@@ -21,7 +22,6 @@
 
 ---
 
-
 ## 📸 Capturas
 
 ### Vista general 🖥️  
@@ -36,22 +36,23 @@
 ### Modo oscuro 🌙  
 ![Oscuro](./img/captura_modo_oscuro.png)
 
-
 ---
 
 ## 🎓 ¿Qué aprendí?
 
 - 🤝 Integración real con API REST usando fetch/JSON.  
-- ✔️ Validar formularios y trabajar sobre ellos.
+- ✔️ Validar formularios y trabajar sobre ellos.  
 - 🔄 Actualizar la UI dinámicamente sin recargas.  
 - 📐 Diseño responsive y accesible con Bootstrap.  
 - 💾 Exportar datos y crear modos visuales claros y oscuros.  
 
 ---
 
-                                    💡 ¡Un proyecto que me ayudó a subir de nivel en desarrollo web! Gracias UTN por el desafío 🙌
+<p align="center" style="margin-top: 3rem;">
+  💡 <b>¡Un proyecto que me ayudó a subir de nivel en desarrollo web! Gracias UTN por el desafío 🙌</b>
+</p>
 
-
+---
 
 ## 🗂️ Estructura del Proyecto
 
@@ -67,5 +68,3 @@
 - `pintureria.html` 🖥️ — Página principal con formulario y listado
 
 - `README.md` 📄 — Documentación completa del proyecto
-
-
