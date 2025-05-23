@@ -21,7 +21,6 @@
 
 ---
 
-## 📸 Capturas
 
 ## 📸 Capturas
 
