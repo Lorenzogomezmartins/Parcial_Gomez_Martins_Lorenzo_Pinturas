@@ -25,6 +25,7 @@
 ## 📸 Capturas
 
 ### Formulario
+![Captura de pantalla 2025-05-23 160514](https://github.com/user-attachments/assets/1cafdce7-e5fd-4f14-b29f-c3943e60c56b)
 
 
 ### Tabla 📝  
@@ -32,10 +33,12 @@
 
 
 ### Estadísticas 📊  
-![Stats](./img/captura_estadisticas.png)
+![Captura de pantalla 2025-05-23 160544](https://github.com/user-attachments/assets/2c413010-6a5c-4bcb-a298-3adeee6a6dd1)
+
 
 ### Modo oscuro 🌙  
-![Oscuro](./img/captura_modo_oscuro.png)
+![Captura de pantalla 2025-05-23 160519](https://github.com/user-attachments/assets/0e780cc0-faf3-4376-9aa3-65ade4de0f35)
+
 
 ---
 
