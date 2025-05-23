@@ -76,3 +76,5 @@
 - `pintureria.html` 🖥️ — Página principal con formulario y listado
 
 - `README.md` 📄 — Documentación completa del proyecto
+
+- Link del Repositorio: https://github.com/Lorenzogomezmartins/Parcial_Gomez_Martins_Lorenzo_Pinturas.git
