@@ -24,11 +24,12 @@
 
 ## 📸 Capturas
 
-### Vista general 🖥️  
-![General](./img/captura_general.png)
+### Formulario
 
-### Formulario y tabla 📝  
-![Formulario](./img/captura_formulario_tabla.png)
+
+### Tabla 📝  
+![Captura de pantalla 2025-05-23 160536](https://github.com/user-attachments/assets/7eb492bd-4676-4a81-adeb-b1e81356c7fc)
+
 
 ### Estadísticas 📊  
 ![Stats](./img/captura_estadisticas.png)
